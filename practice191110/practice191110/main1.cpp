@@ -17,22 +17,24 @@ bool isPalindrome(string s) {
 	return i >= j ? true : false;
 }
 
-int main1()
+int main()
 {
 	string s1;
 	string s2;
-	string s3;
 	string tmp;
-	cin >> s1;
-	cin >> s2;
+	int count = 0;
+	getline(cin,s1);
+	getline(cin,s2);
 
 	for (int i = 0; i < s1.size(); i++)
-	{
-		tmp = s1[i] + s3 + s2;
-		s3 = s1[i] + s3;
+	{ 
+		tmp = s1;
+		tmp.insert(i, s2);
+		if (isPalindrome(tmp))
+			count++;
 	}
 
-	int count = 0;
+	cout << count << endl;
 	system("pause");
 	return 0;
 }

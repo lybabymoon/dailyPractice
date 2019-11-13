@@ -4,8 +4,6 @@ using namespace std;
 
 class Solution
 {
-	int m_m;
-	int m_h;
 public:
 	int findMaxNum(int  w,int h)
 	{

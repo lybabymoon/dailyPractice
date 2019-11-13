@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-int findTimes(int num1, vector<int> &nums)
+int findTimes1(int num1, vector<int> &nums)
 {
 	int count = 1;
 	for (int j = 1; j<num1 - 1; j++)
@@ -17,7 +17,7 @@ int findTimes(int num1, vector<int> &nums)
 	}
 	return count;
 }
-int main()
+int main1()
 {
 
 	int num1 = 0;
@@ -33,7 +33,7 @@ int main()
 	{
 		cin >> nums[i];
 	}
-	cout << findTimes(num1, nums);
+	cout << findTimes1(num1, nums);
 	system("pause");
 	return 0;
 }

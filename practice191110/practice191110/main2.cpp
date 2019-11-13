@@ -24,7 +24,7 @@ int maxSubArray(vector<int>& nums) {
 	return sum;
 }
 
-int main()
+int main1()
 {
 	int n = 0;
 	vector<int> ans;
