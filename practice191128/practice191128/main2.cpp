@@ -9,8 +9,8 @@ int getCommonStrLength(string s1, string s2)
 	int cur1 = 0;
 	int cur2 = 0;
 	int j = 0;
-	int i = 0;
-	for (; i < s1.size(); i++)
+
+	for (int i = 0; i < s1.size(); i++)
 	{
 		for (j=0; j < s2.size(); j++)
 		{
@@ -23,6 +23,7 @@ int getCommonStrLength(string s1, string s2)
 				{
 					i++;
 					j++;
+
 					if (s1[i] == s2[j])
 					{
 						++count;
