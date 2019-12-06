@@ -69,9 +69,6 @@ int main()
 		}
 
 		vector<int> cur = findPassword(ans, n);
-
-		string ret;
-		string b;
 	/*	for (auto & i : cur)
 		{
 			if (i < 1000)
